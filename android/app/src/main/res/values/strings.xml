@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Thesis PoC</string>
+    <string name="app_name">OpenCV App</string>
     <string name="start_button">START ESP32-CAM</string>
     <string name="capture_button">CAPTURE FRAME</string>
     <string name="download_button">DOWNLOAD FRAME</string>

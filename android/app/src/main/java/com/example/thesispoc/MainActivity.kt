@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
 
         // Set webView settings
         @SuppressLint("SetJavaScriptEnabled")
-        val url = "http://192.168.1.4:5000/"
-        val captureUrl = "http://192.168.1.4:5000/capture"
-        val downloadUrl = "http://192.168.1.4:5000/downloads"
+        val url = "http://192.168.10.217:5000/"
+        val captureUrl = "http://192.168.10.217:5000/capture"
+        val downloadUrl = "http://192.168.10.217:5000/downloads"
         val webView = findViewById<WebView>(R.id.webView)
 
         webView.webViewClient = WebViewClient()
@@ -54,13 +54,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
         // Define click listeners
         startButton.setOnClickListener {
             Toast.makeText(this, "Starting ESP32-CAM...", Toast.LENGTH_LONG).show()
             webView.loadUrl(url)
         }
-
 
         captureButton.setOnClickListener {
             Toast.makeText(this, "Capturing frame...", Toast.LENGTH_LONG).show()
